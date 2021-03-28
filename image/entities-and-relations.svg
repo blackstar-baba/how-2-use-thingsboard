@@ -1,0 +1,61 @@
+<svg id="svg4379" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 522.04674" height="522.05" width="800" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <g id="layer1" transform="translate(184.78 439.99)">
+  <g id="g9244" transform="matrix(.94650 0 0 .94650 538.52 -115.13)">
+   <flowRoot id="flowRoot5090" font-size="40px" xml:space="preserve" style="word-spacing:0px;letter-spacing:0px" line-height="125%" font-family="sans-serif" fill="#000000"><flowRegion id="flowRegion5092"><rect id="rect5094" y="-25.18" width="442.86" x="1217.1" height="847.14"/></flowRegion><flowPara id="flowPara5096"/></flowRoot>
+  </g>
+  <g id="g6164" transform="translate(149.57)">
+   <g id="g6088" transform="translate(-7.1714 -16)">
+    <g id="g5262" transform="translate(-84.853 106.08)">
+     <g id="g4377" stroke-linejoin="round" transform="matrix(.76933 0 0 .58514 210.14 -385.27)" stroke="#305680" stroke-linecap="round" stroke-width="5.925" fill="#fff">
+      <rect id="rect6925-8-9-5-7-2-5-8" height="144.98" width="163.58" y="493.97" x="-352.22"/>
+      <rect id="rect6925-8-9-5-7-2-59" height="144.98" width="163.58" y="480.29" x="-370.56"/>
+      <rect id="rect6925-8-9-5-7-7" height="144.98" width="163.58" y="466.73" x="-390.75"/>
+     </g>
+     <text id="text4914-1-2-0-6-0-5" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" font-weight="bold" font-size="13.971px" line-height="125%" y="-58.373802" x="-27.765783" font-family="Roboto" xml:space="preserve" fill="#237de0"><tspan id="tspan4847" y="-58.373802" x="-27.765781">Moisture sensors</tspan></text>
+     <text id="text4914-1-2-0-6-0-5-4" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" font-weight="bold" font-size="15.504px" line-height="125%" y="-89.343163" x="-23.62019" font-family="Roboto" xml:space="preserve" fill="#305680"><tspan id="tspan4847-8" y="-89.343163" x="-23.620188">Devices</tspan></text>
+     <path id="path4596" fill="#305680" d="m-79.155-102.07h18v-2h-18c-1.1 0-2 0.9-2 2v12c0 1.1 0.9 2 2 2h4v-2h-4v-12zm10 6h-4v1.78c-0.61 0.55-1 1.33-1 2.22s0.39 1.67 1 2.22v1.78h4v-1.78c0.61-0.55 1-1.34 1-2.22s-0.39-1.67-1-2.22v-1.78zm-2 5.5c-0.83 0-1.5-0.67-1.5-1.5s0.67-1.5 1.5-1.5 1.5 0.67 1.5 1.5-0.67 1.5-1.5 1.5zm11-9.5h-6c-0.5 0-1 0.5-1 1v10c0 0.5 0.5 1 1 1h6c0.5 0 1-0.5 1-1v-10c0-0.5-0.5-1-1-1zm-1 10h-4v-8h4v8z"/>
+    </g>
+    <g id="g5273" transform="translate(-84.853 106.08)">
+     <g id="g10122" stroke-linejoin="round" transform="matrix(1.0499 0 0 .99905 224.56 1.3697)" stroke="#305680" stroke-linecap="round" stroke-width="3.9753" fill="#fff">
+      <rect id="rect6925-8-9-5-7-2-5-8-2" height="84.834" width="125.85" y="-96.227" x="-60.831"/>
+      <rect id="rect6925-8-9-5-7-2-59-9" height="84.834" width="125.85" y="-104.23" x="-74.945"/>
+      <rect id="rect6925-8-9-5-7-7-6" height="84.834" width="125.85" y="-112.17" x="-90.473"/>
+     </g>
+     <text id="text4914-1-2-0-6-0-5-1" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" font-weight="bold" font-size="13.971px" line-height="125%" y="-56.945232" x="194.23422" font-family="Roboto" xml:space="preserve" fill="#237de0"><tspan id="tspan4847-0" y="-56.945232" x="194.23422">Irrigation systems</tspan></text>
+     <text id="text4914-1-2-0-6-0-5-4-1" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" font-weight="bold" font-size="15.504px" line-height="125%" y="-87.20031" x="194.76903" font-family="Roboto" xml:space="preserve" fill="#305680"><tspan id="tspan4847-8-1" y="-87.20031" x="194.76903">Devices</tspan></text>
+     <path id="path4596-0" fill="#305680" d="m139.23-99.924h18v-2h-18c-1.1 0-2 0.9-2 2v12c0 1.1 0.9 2 2 2h4v-2h-4v-12zm10 6h-4v1.78c-0.61 0.55-1 1.33-1 2.22s0.39 1.67 1 2.22v1.78h4v-1.78c0.61-0.55 1-1.34 1-2.22s-0.39-1.67-1-2.22v-1.78zm-2 5.5c-0.83 0-1.5-0.67-1.5-1.5s0.67-1.5 1.5-1.5 1.5 0.67 1.5 1.5-0.67 1.5-1.5 1.5zm11-9.5h-6c-0.5 0-1 0.5-1 1v10c0 0.5 0.5 1 1 1h6c0.5 0 1-0.5 1-1v-10c0-0.5-0.5-1-1-1zm-1 10h-4v-8h4v8z"/>
+    </g>
+   </g>
+   <g id="g5901" transform="translate(12.122 -61.802)">
+    <g id="g4377-3" stroke-linejoin="round" transform="matrix(.76933 0 0 .58514 340.86 -649.56)" stroke="#305680" stroke-linecap="round" stroke-width="5.925" fill="#fff">
+     <rect id="rect6925-8-9-5-7-2-5-8-6" height="144.98" width="163.58" y="493.97" x="-352.22"/>
+     <rect id="rect6925-8-9-5-7-2-59-0" height="144.98" width="163.58" y="480.29" x="-370.56"/>
+     <rect id="rect6925-8-9-5-7-7-5" height="144.98" width="163.58" y="466.73" x="-390.75"/>
+    </g>
+    <text id="text4914-1-2-0-6-0-5-0" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" font-weight="bold" xml:space="preserve" font-size="18.258px" line-height="125%" y="-320.92532" x="103.53509" font-family="Roboto" fill="#237de0"><tspan id="tspan4847-2" x="103.53509" y="-320.92532">Region A</tspan></text>
+    <text id="text4914-1-2-0-6-0-5-4-8" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" font-weight="bold" xml:space="preserve" font-size="15.504px" line-height="125%" y="-353.62888" x="100.80837" font-family="Roboto" fill="#305680"><tspan id="tspan4847-8-8" x="100.80837" y="-353.62888">Assets</tspan></text>
+    <path id="path5338" d="m59.417-365.35v-4h-10v18h20v-14h-10zm-6 12h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm4 12h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2v-2h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z" fill="#305680"/>
+   </g>
+   <g id="g6124">
+    <g id="g5966" transform="translate(-178.39 36.577)">
+     <rect id="rect6925-8-9-5-7-7-5-3" stroke-linejoin="round" height="84.834" width="125.85" stroke="#305680" stroke-linecap="round" y="-257.88" x="124.53" stroke-width="3.9753" fill="#fff"/>
+     <text id="text4914-1-2-0-6-0-5-0-3" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" font-weight="bold" font-size="18.258px" line-height="125%" y="-202.3539" x="187.8208" font-family="Roboto" xml:space="preserve" fill="#237de0"><tspan id="tspan4847-2-3" y="-202.3539" x="187.8208">Field A</tspan></text>
+     <text id="text4914-1-2-0-6-0-5-4-8-8" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" font-weight="bold" font-size="15.504px" line-height="125%" y="-235.05745" x="182.23694" font-family="Roboto" xml:space="preserve" fill="#305680"><tspan id="tspan4847-8-8-0" y="-235.05745" x="182.23694">Asset</tspan></text>
+     <path id="path5338-4" fill="#305680" d="m143.7-246.78v-4h-10v18h20v-14h-10zm-6 12h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm4 12h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2v-2h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+    </g>
+    <g id="g6013" transform="translate(35.317 12.891)">
+     <rect id="rect6925-8-9-5-7-7-5-3-6" stroke-linejoin="round" height="84.834" width="125.85" stroke="#305680" stroke-linecap="round" y="-234.2" x="152.92" stroke-width="3.9753" fill="#fff"/>
+     <text id="text4914-1-2-0-6-0-5-0-3-8" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" font-weight="bold" font-size="18.258px" line-height="125%" y="-178.66774" x="216.21323" font-family="Roboto" xml:space="preserve" fill="#237de0"><tspan id="tspan4847-2-3-9" y="-178.66774" x="216.21323">Field B</tspan></text>
+     <text id="text4914-1-2-0-6-0-5-4-8-8-0" style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" font-weight="bold" font-size="15.504px" line-height="125%" y="-211.37129" x="210.62936" font-family="Roboto" xml:space="preserve" fill="#305680"><tspan id="tspan4847-8-8-0-6" y="-211.37129" x="210.62936">Asset</tspan></text>
+     <path id="path5338-4-8" fill="#305680" d="m172.09-223.1v-4h-10v18h20v-14h-10zm-6 12h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm4 12h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2v-2h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+    </g>
+   </g>
+   <path id="path18461-2-0-6-2-1-0-5-0-5-3-7-6-6-9" d="m28.651-255.9c-5.8234 10.083-11.624 20.171-17.433 30.257 10.683-5.0874 21.353-10.246 32.027-15.386-2.621-0.77694-5.273-1.5034-7.9029-2.2673 29.033-25.534 93.818-82.361 93.818-82.361l-4.7426-4.833s-64.768 56.845-93.819 82.359c-0.66018-2.5824-1.2776-5.1882-1.9473-7.7692z" fill="#305680"/>
+   <path id="path18461-2-0-6-2-1-0-5-0-5-3-7-6-6-9-0" d="m238.09-256.73c5.8234 10.083 11.624 20.171 17.433 30.257-10.683-5.0874-21.353-10.246-32.028-15.386 2.621-0.77694 5.273-1.5034 7.9029-2.2673-29.033-25.534-93.818-82.361-93.818-82.361l4.7426-4.833s64.768 56.845 93.819 82.359c0.66018-2.5824 1.2776-5.1882 1.9473-7.7692z" fill="#305680"/>
+   <text id="text4914-6-5-7-3-2-6-3" style="word-spacing:0px;letter-spacing:0px" font-weight="bold" font-size="23.041px" line-height="125%" y="-267.09595" x="84.125008" font-family="Roboto" xml:space="preserve" fill="#237de0"><tspan id="tspan6911-2-5-3" y="-267.09595" x="84.125008">Contains</tspan></text>
+   <path id="path18461-2-0-6-2-1-0-5-0-5-3-7-6-6-9-3" d="m-99.084-58.325c-5.8234 10.083-11.624 20.171-17.433 30.257 10.683-5.0874 21.353-10.246 32.027-15.386-2.621-0.77694-5.273-1.5034-7.9029-2.2673 29.033-25.534 93.818-82.361 93.818-82.361l-4.7426-4.833s-64.768 56.845-93.819 82.359c-0.66018-2.5824-1.2776-5.1882-1.9473-7.7692z" fill="#305680"/>
+   <path id="path18461-2-0-6-2-1-0-5-0-5-3-7-6-6-9-0-7" d="m110.36-59.157c5.8234 10.083 11.624 20.171 17.433 30.257-10.683-5.0874-21.353-10.246-32.028-15.386 2.621-0.77694 5.2731-1.5034 7.9029-2.2673-29.034-25.535-93.819-82.357-93.819-82.357l4.7426-4.833s64.768 56.845 93.819 82.359c0.66018-2.5824 1.2776-5.1882 1.9473-7.7692z" fill="#305680"/>
+   <text id="text4914-6-5-7-3-2-6-3-3" style="word-spacing:0px;letter-spacing:0px" font-weight="bold" font-size="23.041px" line-height="125%" y="-69.52198" x="-43.609577" font-family="Roboto" xml:space="preserve" fill="#237de0"><tspan id="tspan6911-2-5-3-2" y="-69.52198" x="-43.609577">Contains</tspan></text>
+  </g>
+ </g>
+</svg>

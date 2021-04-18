@@ -1,0 +1,309 @@
+{
+  "ruleChain": {
+    "additionalInfo": {
+      "description": ""
+    },
+    "name": "Silo",
+    "firstRuleNodeId": null,
+    "root": false,
+    "debugMode": false,
+    "configuration": null
+  },
+  "metadata": {
+    "firstNodeIndex": null,
+    "nodes": [
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 255,
+          "layoutY": 161
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Silo A  humidity generate",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 3,
+          "jsScript": "var msg = { \n    humidity: Math.round(Math.random()*100*100)/100\n    \n};\nvar metadata = { \"deviceName\": \"Silo A\" };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "d823adb0-9c6c-11eb-95ed-d78a9872a48b",
+          "originatorType": "DEVICE"
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 257,
+          "layoutY": 236
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Silo A  weight generate",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 3,
+          "jsScript": "var msg = { \n    weight: Math.round(Math.random()*200*100)/100\n    \n};\nvar metadata = { \"deviceName\": \"Silo A\" };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "d823adb0-9c6c-11eb-95ed-d78a9872a48b",
+          "originatorType": "DEVICE"
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 256,
+          "layoutY": 421
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Silo B humidity generate",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 3,
+          "jsScript": "var msg = { \n    humidity: Math.round(Math.random()*100*100)/100\n    \n};\nvar metadata = { \"deviceName\": \"Silo B\" };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "de2f1280-9c6c-11eb-95ed-d78a9872a48b",
+          "originatorType": "DEVICE"
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 254,
+          "layoutY": 492
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Silo B weight generate",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 3,
+          "jsScript": "var msg = { \n    weight: Math.round(Math.random()*200*100)/100\n    \n};\nvar metadata = { \"deviceName\": \"Silo B\" };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "de2f1280-9c6c-11eb-95ed-d78a9872a48b",
+          "originatorType": "DEVICE"
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 253,
+          "layoutY": 649
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Silo C humidity generate",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 3,
+          "jsScript": "var msg = { \n    humidity: Math.round(Math.random()*100*100)/100\n    \n};\nvar metadata = { \"deviceName\": \"Silo C\" };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "e42a98d0-9c6c-11eb-95ed-d78a9872a48b",
+          "originatorType": "DEVICE"
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 252,
+          "layoutY": 716
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Silo C weight generate",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 3,
+          "jsScript": "var msg = { \n    weight: Math.round(Math.random()*50*100)/100\n    \n};\nvar metadata = { \"deviceName\": \"Silo C\" };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "e42a98d0-9c6c-11eb-95ed-d78a9872a48b",
+          "originatorType": "DEVICE"
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 655,
+          "layoutY": 511
+        },
+        "type": "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode",
+        "name": "Change Origin",
+        "debugMode": false,
+        "configuration": {
+          "originatorSource": "RELATED",
+          "relationsQuery": {
+            "fetchLastLevelOnly": false,
+            "direction": "FROM",
+            "maxLevel": 1,
+            "filters": [
+              {
+                "relationType": "Contains",
+                "entityTypes": [
+                  "DEVICE"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 872,
+          "layoutY": 428
+        },
+        "type": "org.thingsboard.rule.engine.transform.TbTransformMsgNode",
+        "name": "Msg transfrom",
+        "debugMode": false,
+        "configuration": {
+          "jsScript": "var newMsg = {\n  \"silo\": metadata.deviceName,\n  \"tag\":  metadata.isNewAlarm ? \"WARNING\":\"INFO\",\n  \"body\": msg.details.data\n};\nreturn {msg: newMsg, metadata: metadata, msgType: \"POST_TELEMETRY_REQUEST\"};"
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 559,
+          "layoutY": 374
+        },
+        "type": "org.thingsboard.rule.engine.profile.TbDeviceProfileNode",
+        "name": "Silo device profile",
+        "debugMode": false,
+        "configuration": {
+          "persistAlarmRulesState": false,
+          "fetchAlarmRulesStateOnStart": false
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 899,
+          "layoutY": 228
+        },
+        "type": "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode",
+        "name": "Save timeseries",
+        "debugMode": false,
+        "configuration": {
+          "defaultTTL": 3600
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 256,
+          "layoutY": 87
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Silo A  temperature generate",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 3,
+          "jsScript": "var msg = { \n    temperature: Math.round(Math.random()*50*100)/100\n    \n};\nvar metadata = { \"deviceName\": \"Silo A\" };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "d823adb0-9c6c-11eb-95ed-d78a9872a48b",
+          "originatorType": "DEVICE"
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 256,
+          "layoutY": 348
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Silo B temperature generate",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 3,
+          "jsScript": "var msg = { \n    temperature: Math.round(Math.random()*50*100)/100\n    \n};\nvar metadata = { \"deviceName\": \"Silo B\" };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "de2f1280-9c6c-11eb-95ed-d78a9872a48b",
+          "originatorType": "DEVICE"
+        }
+      },
+      {
+        "additionalInfo": {
+          "description": "",
+          "layoutX": 254,
+          "layoutY": 588
+        },
+        "type": "org.thingsboard.rule.engine.debug.TbMsgGeneratorNode",
+        "name": "Silo C temperature generate",
+        "debugMode": false,
+        "configuration": {
+          "msgCount": 0,
+          "periodInSeconds": 3,
+          "jsScript": "var msg = { \n    temperature: Math.round(Math.random()*50*100)/100\n    \n};\nvar metadata = { \"deviceName\": \"Silo C\" };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
+          "originatorId": "e42a98d0-9c6c-11eb-95ed-d78a9872a48b",
+          "originatorType": "DEVICE"
+        }
+      }
+    ],
+    "connections": [
+      {
+        "fromIndex": 0,
+        "toIndex": 8,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 1,
+        "toIndex": 8,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 2,
+        "toIndex": 8,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 3,
+        "toIndex": 8,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 4,
+        "toIndex": 8,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 5,
+        "toIndex": 8,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 6,
+        "toIndex": 7,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 7,
+        "toIndex": 9,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 8,
+        "toIndex": 6,
+        "type": "Alarm Created"
+      },
+      {
+        "fromIndex": 8,
+        "toIndex": 6,
+        "type": "Alarm Cleared"
+      },
+      {
+        "fromIndex": 8,
+        "toIndex": 9,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 10,
+        "toIndex": 8,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 11,
+        "toIndex": 8,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 12,
+        "toIndex": 8,
+        "type": "Success"
+      }
+    ],
+    "ruleChainConnections": null
+  }
+}

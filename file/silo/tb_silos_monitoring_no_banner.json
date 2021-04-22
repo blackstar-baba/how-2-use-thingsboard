@@ -1704,11 +1704,10 @@
         "alias": "Silo Dispatcher",
         "filter": {
           "type": "entityList",
-          "resolveMultiple": false,
           "entityType": "DEVICE",
+          "resolveMultiple": false,
           "entityList": [
-            "b7087210-08e0-11e7-81d9-bb0136cc33d0",
-            "42364fd0-9d8c-11eb-b763-8977a151d487"
+            "b7087210-08e0-11e7-81d9-bb0136cc33d0"
           ]
         }
       },
@@ -1717,11 +1716,10 @@
         "alias": "Silo A",
         "filter": {
           "type": "entityList",
-          "resolveMultiple": false,
           "entityType": "DEVICE",
+          "resolveMultiple": false,
           "entityList": [
-            "a766d400-08e0-11e7-81d9-bb0136cc33d0",
-            "d823adb0-9c6c-11eb-95ed-d78a9872a48b"
+            "a766d400-08e0-11e7-81d9-bb0136cc33d0"
           ]
         }
       },
@@ -1730,11 +1728,10 @@
         "alias": "Silo B",
         "filter": {
           "type": "entityList",
-          "resolveMultiple": false,
           "entityType": "DEVICE",
+          "resolveMultiple": false,
           "entityList": [
-            "ab702740-08e0-11e7-81d9-bb0136cc33d0",
-            "de2f1280-9c6c-11eb-95ed-d78a9872a48b"
+            "ab702740-08e0-11e7-81d9-bb0136cc33d0"
           ]
         }
       },
@@ -1743,11 +1740,10 @@
         "alias": "Silo C",
         "filter": {
           "type": "entityList",
-          "resolveMultiple": false,
           "entityType": "DEVICE",
+          "resolveMultiple": false,
           "entityList": [
-            "af240781-08e0-11e7-81d9-bb0136cc33d0",
-            "e42a98d0-9c6c-11eb-95ed-d78a9872a48b"
+            "af240781-08e0-11e7-81d9-bb0136cc33d0"
           ]
         }
       },
@@ -1761,10 +1757,7 @@
           "entityList": [
             "a766d400-08e0-11e7-81d9-bb0136cc33d0",
             "ab702740-08e0-11e7-81d9-bb0136cc33d0",
-            "af240781-08e0-11e7-81d9-bb0136cc33d0",
-            "d823adb0-9c6c-11eb-95ed-d78a9872a48b",
-            "de2f1280-9c6c-11eb-95ed-d78a9872a48b",
-            "e42a98d0-9c6c-11eb-95ed-d78a9872a48b"
+            "af240781-08e0-11e7-81d9-bb0136cc33d0"
           ]
         }
       }

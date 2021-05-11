@@ -41,7 +41,21 @@
 ### 高阶使用
 
 #### 源码分析
-- 工程结构 [入口](工程结构)
+- 工程结构
+  -  整体分析
+  - application分析
+  - common分析
+  - dao分析
+  - docker分析
+  - ~~k8s分析~~（官方已不再推荐使用此包类容，抽取到新的github工程 [thingsboard-ce-k8s](https://github.com/thingsboard/thingsboard-ce-k8s)）
+  - msa分析
+  - netty-mqtt分析
+  - packaging分析
+  - rest-client分析
+  - rule-engine分析
+  - tools分析
+  - transport分析
+  - ui-ngx分析
 - Actor模型
 - 规则引擎
 - 数据接入 	

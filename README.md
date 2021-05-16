@@ -42,20 +42,20 @@
 
 #### 源码分析
 - 工程结构
-  -  整体分析 [入口](doc/工程/整体分析.md)
-  - application分析  [入口](doc/工程/application分析.md)
-  - common分析
-  - dao分析
-  - docker分析
+  - 整体 [入口](doc/工程/整体.md)
+  - application  [入口](doc/工程/application.md)
+  - common
+  - dao
+  - docker
   - ~~k8s分析~~（官方已不再推荐使用此包类容，抽取到新的github工程 [thingsboard-ce-k8s](https://github.com/thingsboard/thingsboard-ce-k8s)）
-  - msa分析
-  - netty-mqtt分析
-  - packaging分析
-  - rest-client分析
-  - rule-engine分析
-  - tools分析
-  - transport分析
-  - ui-ngx分析
+  - msa
+  - netty-mqtt
+  - packaging
+  - rest-client
+  - rule-engine
+  - tools
+  - transport
+  - ui-ngx
 - Actor模型
 - 规则引擎
 - 数据接入 	

@@ -70,20 +70,54 @@
   依赖仓库`jenkins`,可能有一些特殊依赖需要从jenkins仓库中获取。
 
 ##### 结构
-maven工程的约定为`src/main/java`存放源码,`src/main/resource`存放资源文件，因此主要关注这两个包下的内容
+maven工程约定：`src/main/java`存放源码,`src/main/resource`存放资源文件，`src/test/java`存放测试文件，`src/test/resource`存放测试资源文件
 - `src/main/java`
-  //todo
+```
+.
+└── org
+    └── thingsboard
+        └── server
+            ├── ThingsboardInstallApplication.java （安装）
+            ├── ThingsboardServerApplication.java （启动）
+            ├── actors （暂时不明）
+            ├── config （一些配置）
+            ├── controller （MVC控制层）
+            ├── exception （异常相关）
+            ├── install （安装相关）
+            ├── service （MVC服务层）
+            └── utils （工具类）
+```
+`ThingsboardInstallApplication`看着是安装应用的入口，`ThingsboardServerApplication`看着是服务入口，**后续重点关注这2个文件**
+
 
 - `src/main/resource`
-  //todo
-  
-- `其他`
-  //todo
+```
+.
+├── banner.txt （Spring boot应用启动时的控制台输出）
+├── i18n （国际化相关）
+├── logback.xml （logback日志框架的配置文件）
+├── templates （一些模版）
+└── thingsboard.yml （thingsboard配置文件）
+```
+**后续重点关注`thingsboard.yml`文件**。
+- `src/test/java` 一些测试文件，暂时忽略
+- `src/test/resource` 一些测试资源文件，暂时忽略
+- `src/main/conf` 一个logback.xml配置文件和thingsboard.conf配置文件，用途不明，可能是打包时使用
+- `src/main/data`
+```
+.
+├── certs (证书文件夹，只有一个`Azure`子文件夹，可能与微软的Azure平台相关)
+├── json (看着system Widgets_bundle以及tenant rule chains，可能和系统初始化相关)
+└── upgrade (升级文件夹，里面有多个版本号的子文件夹，可能有一些相关脚本升级脚本)
+```
 
 #### 结果
 通过分析，可以得出以下结果：
 
-- //todo
+- application是一个基于Spring Boot的Web工程。
+- application包含有两个入口类：`ThingsboardInstallApplication`(安装)和`ThingsboardServerApplication`（启动）
+- 日志使用了logback框架
+- 配置文件为`thingsboard.yml`
 
 
 #### TIPS

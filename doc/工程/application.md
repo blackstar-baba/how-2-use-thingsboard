@@ -11,7 +11,7 @@
 
 ![工程结构](../../image/工程结构.png)
 
-
+双击`application`文件夹。
 
 #### 分析
 整体工程为maven父子工程，因此application也是maven工程，对`pom.xml`进行基础的分析

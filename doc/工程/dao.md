@@ -14,9 +14,21 @@
 
 #### 分析
 整体工程为maven父子工程，因此application也是maven工程，对`pom.xml`进行基础的分析
-##### pom
+```
+<dependencies>
+  <dependency>
+  <groupId>org.thingsboard.common</groupId>
+  <artifactId>data</artifactId>
+  </dependency>
+  <dependency>
+  <groupId>org.thingsboard.common</groupId>
+  <artifactId>message</artifactId>
+  </dependency>
+  ......
+</dependencies> 
+```
 
-##### 结构
+
 
 #### 结果
 通过分析，可以得出以下结果：

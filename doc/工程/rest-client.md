@@ -10,16 +10,33 @@
 
 ![工程结构](../../image/工程结构.png)
 
-
+双击`rest-client`文件夹。
 
 #### 分析
-整体工程为maven父子工程，因此application也是maven工程，对`pom.xml`进行基础的分析
-##### pom
+通过名称可以得知，该子工程是Restful风格的客户端
 
-##### 结构
+`pom.xml`基础分析
 
-#### 结果
-通过分析，可以得出以下结果：
+```
+<dependencies>
+  <dependency>
+  <groupId>org.thingsboard.common</groupId>
+  <artifactId>data</artifactId>
+  </dependency>
+  <dependency>
+  <groupId>org.springframework</groupId>
+  <artifactId>spring-web</artifactId>
+  </dependency>
+</dependencies>
+```
 
+内部依赖：`data`，外部依赖：`spring-web`（Spring web）
+
+#### 结论
+通过分析，可以得出以下结论：
+
+- 该工程使用Spring Web相关基础类，完成一个Resftul客户端。
 
 #### TIPS
+
+无。

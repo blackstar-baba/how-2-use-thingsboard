@@ -13,7 +13,7 @@
 双击`dao`文件夹。
 
 #### 分析
-整体工程为maven父子工程，因此application也是maven工程，对`pom.xml`进行基础的分析
+对`pom.xml`进行基础分析
 ```
 <dependencies>
   <dependency>
@@ -30,8 +30,8 @@
 
 内部依赖：`data`、`message`、`stats`、`dao-api`、`util`，外部核心依赖：`postgresql`（Postgresql驱动）、`jackson-databind`（Json序列化与反序列化）、`protobuf-java`（protobuf序列化与反序列化）`spring-tx`（Spring事务）、`java-driver-core`（Cassandra驱动）、`hsqldb`（Hsql驱动）、`jedis`（redis客户端）、`caffeine`（缓存）、`spring-boot-starter-data-jpa`（Spring JPA）、`slf4j`、`logback`、`junit`。
 
-#### 结果
-通过分析，可以得出以下结果：
+#### 结论
+通过分析，可以得出以下结论：
 - dao子工程主要用于数据持久化
 - 使用JPA作为持久层框架
 - 使用`postgresql`、`cassandra`、`hsql`三种数据源

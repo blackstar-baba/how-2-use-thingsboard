@@ -14,7 +14,7 @@
 双击`application`文件夹。
 
 #### 分析
-整体工程为maven父子工程，因此application也是maven工程，对`pom.xml`进行基础的分析
+对`pom.xml`进行基础分析
 ##### pom
 
 - denpendencies
@@ -111,8 +111,8 @@ maven工程约定：`src/main/java`存放源码,`src/main/resource`存放资源�
 └── upgrade (升级文件夹，里面有多个版本号的子文件夹，可能有一些相关脚本升级脚本)
 ```
 
-#### 结果
-通过分析，可以得出以下结果：
+#### 结论
+通过分析，可以得出以下结论：
 
 - application是一个基于Spring Boot的Web工程。
 - application包含有两个入口类：`ThingsboardInstallApplication`(安装)和`ThingsboardServerApplication`（启动）

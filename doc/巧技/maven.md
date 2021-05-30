@@ -1,6 +1,6 @@
 #### 介绍
 
-thingsboard对maven的各种使用技巧
+Thingsboard中关于Maven的各种使用技巧。
 
 
 

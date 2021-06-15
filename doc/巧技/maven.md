@@ -10,7 +10,9 @@ Thingsboard中关于Maven的各种使用技巧。
 
 //todo
 
-##### deb包应用
+##### 发布包
+
+deb、rpm
 
 //todo
 

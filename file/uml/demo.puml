@@ -1,0 +1,40 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+skinparam handwritten true
+
+skinparam sequence {
+ArrowColor DeepSkyBlue
+ActorBorderColor DeepSkyBlue
+LifeLineBorderColor blue
+LifeLineBackgroundColor #A9DCDF
+
+ParticipantBorderColor DeepSkyBlue
+ParticipantBackgroundColor DodgerBlue
+ParticipantFontName Impact
+ParticipantFontSize 17
+ParticipantFontColor #A9DCDF
+
+ActorBackgroundColor aqua
+ActorFontColor DeepSkyBlue
+ActorFontSize 17
+ActorFontName Aapex
+}
+
+autonumber
+
+Alice -> Bob: Authentication Request
+activate Bob
+Bob --> Alice: Authentication Response
+deactivate Bob
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
+
+Alice -> Bob: naxx
+Alice <-- Bob: naxx
+
+
+
+
+
+@enduml

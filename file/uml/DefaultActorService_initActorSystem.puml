@@ -1,5 +1,10 @@
 @startuml
-'https://plantuml.com/sequence-diagram
+
+participant DefaultActorService as DefaultActorService
+participant ActorSystemContext as ActorSystemContext
+participant DefaultTbActorSystem as DefaultTbActorSystem
+participant AppActor as AppActor
+participant StatsActor as StatsActor
 
 skinparam handwritten true
 
@@ -26,16 +31,15 @@ autonumber
 
 DefaultActorService -> DefaultTbActorSystem: new
 
-DefaultTbActorSystem -> AppActor: createRootActor
+ActorSystemContext -> ActorSystemContext: setActorSystem(DefaultTbActorSystem)
+
+DefaultTbActorSystem -> DefaultTbActorSystem: createRootActor
+
+ActorSystemContext -> ActorSystemContext: setAppActor(ActorRef of AppActor)
 
 DefaultTbActorSystem -> StatsActor: createRootActor
 
-newpage
-
-
-DefaultActorService -> AppActor: tellWithHighPriority
-
-
+ActorSystemContext -> ActorSystemContext: setStatsActor(ActorRef of StatsActor)
 
 
 

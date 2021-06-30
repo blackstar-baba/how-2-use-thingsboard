@@ -1,0 +1,92 @@
+@startuml
+
+' participant DefaultActorService as DefaultActorService
+' participant ActorSystemContext as ActorSystemContext
+' participant DefaultTbActorSystem as DefaultTbActorSystem
+' participant AppActor as AppActor
+' participant StatsActor as StatsActor
+
+skinparam handwritten true
+
+skinparam sequence {
+ArrowColor DeepSkyBlue
+ActorBorderColor DeepSkyBlue
+LifeLineBorderColor blue
+LifeLineBackgroundColor #A9DCDF
+
+ParticipantBorderColor DeepSkyBlue
+ParticipantBackgroundColor #305680
+ParticipantFontName Impact
+ParticipantFontSize 17
+ParticipantFontColor #A9DCDF
+
+ActorBackgroundColor aqua
+ActorFontColor DeepSkyBlue
+ActorFontSize 17
+ActorFontName Aapex
+}
+
+autonumber
+
+
+ActorSystemContext -> TbActorMailBox: tell
+TbActorMailBox -> AppActor: doProcess
+AppActor -> AppActor: onQueueToRuleEngineMsg
+AppActor -> AppActor: getOrCreateTenantActor
+AppActor -> TbActorMailBox: tell
+TbActorMailBox -> TenantActor: doProcess
+TenantActor -> TenantActor: onQueueToRuleEngineMsg
+TenantActor -> TbActorMailBox: tell
+TbActorMailBox -> RuleChainActor: doProcess
+RuleChainActor -> RuleChainActorMessageProcessor: onQueueToRuleEngineMsg
+RuleChainActorMessageProcessor -> RuleChainActorMessageProcessor: pushMsgToNode
+' note over ActorSystemContext, RuleChainActorMessageProcessor: QueueToRuleEngineMsg
+RuleChainActorMessageProcessor-> TbActorMailBox: tell
+TbActorMailBox -> RuleNodeActor: doProcess
+RuleNodeActor -> RuleNodeActor: onRuleChainToRuleNodeMsg
+RuleNodeActor -> RuleNodeActorMessageProcessor: onRuleChainToRuleNodeMsg
+' note over RuleChainActorMessageProcessor, RuleNodeActorMessageProcessor: RuleChainToRuleNodeMsg
+RuleNodeActorMessageProcessor -> TbDeviceProfileNode: onMsg
+
+TbDeviceProfileNode -> DeviceState: process
+DeviceState -> DeviceState: processTelemetry
+DeviceState -> DefaultTbContext: tellSuccess
+DefaultTbContext -> DefaultTbContext: tellNext
+' note over TbDeviceProfileNode, DefaultTbContext: RuleChainToRuleNodeMsg.msg
+DefaultTbContext -> TbActorMailBox: tell
+TbActorMailBox -> RuleChainActor: doProcess
+RuleChainActor -> RuleChainActorMessageProcessor: onTellNext
+RuleChainActorMessageProcessor -> RuleChainActorMessageProcessor: pushToTarget
+RuleChainActorMessageProcessor -> RuleChainActorMessageProcessor: pushMsgToNode
+' note over DefaultTbContext, RuleChainActorMessageProcessor: RuleNodeToRuleChainTellNextMsg
+RuleChainActorMessageProcessor -> TbActorMailBox: tell
+TbActorMailBox -> RuleNodeActor: doProcess
+RuleNodeActor -> RuleNodeActor: onRuleChainToRuleNodeMsg
+RuleNodeActor -> RuleNodeActorMessageProcessor: onRuleChainToRuleNodeMsg
+' note over RuleChainActorMessageProcessor, RuleNodeActorMessageProcessor: RuleChainToRuleNodeMsg
+RuleNodeActorMessageProcessor -> TbMsgTypeSwitchNode: onMsg
+' note over RuleNodeActorMessageProcessor, TbMsgTypeSwitchNode: RuleChainToRuleNodeMsg.msg
+...
+
+
+
+
+
+
+
+
+' Alice -> Bob: Authentication Request
+' activate Bob
+' Bob --> Alice: Authentication Response
+' deactivate Bob
+' Alice -> Bob: Another authentication Request
+' Alice <-- Bob: another authentication Response
+
+' Alice -> Bob: naxx
+' Alice <-- Bob: naxx
+
+
+
+
+
+@enduml

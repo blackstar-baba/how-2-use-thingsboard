@@ -1,6 +1,6 @@
 #### 环境准备
 
-- release-3.2分支源码，可参考[编译](../编译/编译.md)获取源码
+- release-3.2分支源码
 - IDE Idea或Eclipse，本文使用Idea
 
 

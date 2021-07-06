@@ -24,9 +24,26 @@ ActorFontName Aapex
 autonumber
 
 
-
-//todo
-
+MqttTransportHandler -> MqttTransportHandler: processMqttMsg
+MqttTransportHandler -> MqttTransportHandler: processConnect
+MqttTransportHandler -> MqttTransportHandler: processAuthTokenConnect
+MqttTransportHandler -> DefaultTransportService: process
+DefaultTransportService -> DefaultTransportService: doProcess
+DefaultTransportService -> DefaultTbQueueRequestTemplate: send
+DefaultTbQueueRequestTemplate -> InMemoryTbQueueProducer: send
+InMemoryTbQueueProducer -> TbQueueCallback: onSuccess
+' DefaultTbQueueRequestTemplate -> TbKafkaProducerTemplate: send
+' TbKafkaProducerTemplate -> KafkaProducer: send
+...
+TbQueueCallback -> TransportServiceCallback: onSuccess
+TransportServiceCallback -> MqttTransportHandler: onValidateDeviceResponse
+MqttTransportHandler -> DefaultTransportService: process
+DefaultTransportService -> DefaultTransportService: sendToDeviceActor
+DefaultTransportService -> InMemoryTbQueueProducer: send
+InMemoryTbQueueProducer -> StatsCallback: onSuccess
+StatsCallback -> TransportTbQueueCallback: onSuccess
+TransportTbQueueCallback -> TransportServiceCallback: onSuccess
+TransportServiceCallback -> ChannelHandlerContext: writeAndFlush
 
 ' Alice -> Bob: Authentication Request
 ' activate Bob

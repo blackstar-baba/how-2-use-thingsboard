@@ -30,17 +30,24 @@ MqttTransportHandler -> MqttTransportHandler: processAuthTokenConnect
 MqttTransportHandler -> DefaultTransportService: process
 DefaultTransportService -> DefaultTransportService: doProcess
 DefaultTransportService -> DefaultTbQueueRequestTemplate: send
-DefaultTbQueueRequestTemplate -> InMemoryTbQueueProducer: send
-InMemoryTbQueueProducer -> TbQueueCallback: onSuccess
+DefaultTbQueueRequestTemplate -> TbQueueProducer: send
+' DefaultTbQueueRequestTemplate -> InMemoryTbQueueProducer: send
+' InMemoryTbQueueProducer -> TbQueueCallback: onSuccess
 ' DefaultTbQueueRequestTemplate -> TbKafkaProducerTemplate: send
 ' TbKafkaProducerTemplate -> KafkaProducer: send
 ...
-TbQueueCallback -> TransportServiceCallback: onSuccess
+DefaultTbQueueResponseTemplate -> TbQueueConsumer: poll
+DefaultTbQueueResponseTemplate -> TbQueueProducer: send
+...
+DefaultTbQueueRequestTemplate -> TbQueueConsumer: poll
+...
+DefaultTransportService -> TransportServiceCallback: onSuccess
 TransportServiceCallback -> MqttTransportHandler: onValidateDeviceResponse
 MqttTransportHandler -> DefaultTransportService: process
 DefaultTransportService -> DefaultTransportService: sendToDeviceActor
-DefaultTransportService -> InMemoryTbQueueProducer: send
-InMemoryTbQueueProducer -> StatsCallback: onSuccess
+' DefaultTransportService -> InMemoryTbQueueProducer: send
+' InMemoryTbQueueProducer -> StatsCallback: onSuccess
+DefaultTransportService -> TbQueueProducer: send
 StatsCallback -> TransportTbQueueCallback: onSuccess
 TransportTbQueueCallback -> TransportServiceCallback: onSuccess
 TransportServiceCallback -> ChannelHandlerContext: writeAndFlush

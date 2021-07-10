@@ -56,11 +56,8 @@
   - tools  [入口](doc/工程/tools.md)
   - transport  [入口](doc/工程/transport.md)
   - ui-ngx  [入口](doc/工程/ui-ngx.md)
-- 设备连接 [入口](doc/分析设备连接.md)
-- 数据传输
-  - 通用
-  - 普通设备 
-  - 智能网关
+- 设备连接 [入口](doc/分析/设备连接.md)
+- 数据传输 [入口](doc/分析/数据传输.md)
 - 数据处理
   - 规则引擎 [入口](doc/分析/规则引擎.md)
 - 反向控制

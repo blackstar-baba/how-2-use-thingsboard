@@ -56,7 +56,7 @@
   - tools  [入口](doc/工程/tools.md)
   - transport  [入口](doc/工程/transport.md)
   - ui-ngx  [入口](doc/工程/ui-ngx.md)
-- MVC //todo
+- MVC [入口](doc/分析/MVC分层.md)
 - 权限管理 //todo
 - 设备连接 [入口](doc/分析/设备连接.md)
 - 数据传输 [入口](doc/分析/数据传输.md)

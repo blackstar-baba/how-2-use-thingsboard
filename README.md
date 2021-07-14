@@ -36,7 +36,7 @@
 - 微服务 [入口](doc/部署/微服务.md)
 
 #### 最佳实践
-- 高可用集群
+- 高可用集群 //todo
 
 ### 高阶使用
 
@@ -56,8 +56,8 @@
   - tools  [入口](doc/工程/tools.md)
   - transport  [入口](doc/工程/transport.md)
   - ui-ngx  [入口](doc/工程/ui-ngx.md)
-- MVC [入口](doc/分析/MVC分层.md)
-- 权限管理 //todo
+- MVC分层 [入口](doc/分析/MVC分层.md)
+- 系统权限 //todo
 - 设备连接 [入口](doc/分析/设备连接.md)
 - 数据传输 [入口](doc/分析/数据传输.md)
 - 数据处理

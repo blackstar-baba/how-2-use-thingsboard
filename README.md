@@ -57,7 +57,7 @@
   - transport  [入口](doc/工程/transport.md)
   - ui-ngx  [入口](doc/工程/ui-ngx.md)
 - MVC分层 [入口](doc/分析/MVC分层.md)
-- 系统权限 //todo
+- 系统权限 /[入口](doc/分析/系统权限.md)
 - 设备连接 [入口](doc/分析/设备连接.md)
 - 数据传输 [入口](doc/分析/数据传输.md)
 - 数据处理

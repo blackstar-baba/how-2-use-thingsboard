@@ -78,7 +78,11 @@
 - 租户停用激活
 - 汉化增强`持续进行中`
 
-**二次开发将以新的工程地址进行开源，初步计划使用release-3.3分支进行合并，兼容官方功能**。
+#### 工程
+- **地址**：https://github.com/CodeIsBeatiful/thingsboard
+
+#### 示例
+- **DEMO地址**：http://blackstar-baba.com:9090/
 
 ### 答疑解惑 
 - 清单 [入口](doc/答疑解惑/README.md)

@@ -7,7 +7,7 @@
 
 ### 准备
 - Jdk，11+（因3.2.2版本需要11），用于编译运行
-- Maven，3.2.1+，不强制需要，某些IDE也自带
+- Maven，3.6.0+，不强制需要，某些IDE也自带
 - IDE，推荐Idea，查看代码和运行
 - Html5浏览器，推荐使用Chorme，用于页面操作
 - 容器引擎，推荐使用Docker，用于初始化环境，比如PG数据库
@@ -83,7 +83,7 @@ Fork主工程，基于release-3.3分支进行开发，个人前端开发经验�
 - 汉化增强`持续进行中`
 
 #### 工程
-- **地址**：https://github.com/CodeIsBeatiful/thingsboard
+- **地址**：https://github.com/CodeIsBeatiful/thingsboard，分支3.3-x
 
 #### 示例
 - **DEMO地址**：http://blackstar-baba.com:9090/
@@ -96,4 +96,5 @@ Fork主工程，基于release-3.3分支进行开发，个人前端开发经验�
 
 - 录屏：https://space.bilibili.com/696589672/channel/index
 - 镜像：https://gitee.com/blackstar-baba/how-2-use-thingsboard
+- 翻墙：https://shadow-flys.us/auth/register?code=bT56
 

@@ -11,7 +11,7 @@
 - IDE，推荐Idea，查看代码和运行
 - Html5浏览器，推荐使用Chorme，用于页面操作
 - 容器引擎，推荐使用Docker，用于初始化环境，比如PG数据库
-- Mqtt客户端，推荐使用MqttBox，用于模拟时序数据
+- Mqtt客户端，推荐使用MqttBox，用于模拟时序数据，近期MqttBox不再维护，可使用[Mqttfx](http://www.jensd.de/apps/mqttfx/1.7.1/)或[Eclipse Paho UI])(https://repo.eclipse.org/content/repositories/paho-releases/org/eclipse/paho/org.eclipse.paho.ui.app/)
 
 ### 基础入门
 #### 编译

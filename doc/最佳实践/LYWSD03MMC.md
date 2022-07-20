@@ -1,7 +1,7 @@
 #### 环境准备
 
 - Thingsboard环境
-- 树莓派Rashberry Pi，带蓝牙，OS为Ubuntu20.04
+- 树莓派Rashberry Pi，包含蓝牙且支持蓝牙5.0协议，OS为Ubuntu20.04
 - 小米蓝牙温湿度计2，型号为LYWSD03MMC
 - 脚本 [lyw.sh](../../file/lywsd03mmc/lyw.sh)和配置文件[mqtt.conf](../../file/lywsd03mmc/mqtt.conf)（下载后放在树莓派Rashberry Pi中）
 

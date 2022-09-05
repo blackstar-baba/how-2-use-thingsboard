@@ -6,6 +6,14 @@
 #### 描述
 研究如何使用InfluxDB作为thingsboard读取和写入的时序数据库，可提高查询和写入性能（相较于Cassandra和TimescaleDB）。
 
+#### 分析
+
+需要考虑时序数据的读和写，目前官方已经已经支持两种数据库：`Cassandra`和`TimescaleDB`，可参考这两种数据库的读写实现。
+
+时序保存使用规则节点`TbMsgTimeseriesNode`，可以通过此节点追踪到需要实现`TimeseriesDao`和`TimeseriesLatestDao`。
+
+![baseTimeseriesService_save](../../image/baseTimeseriesService_save.png)
+
 #### 开发
 
 ##### InfluxDB初始化（如有环境可跳过）

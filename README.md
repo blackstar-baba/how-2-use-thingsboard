@@ -6,21 +6,25 @@
 - 答疑解惑（不限）
 
 ### 准备
-- Jdk，11+（因3.2.2版本需要11），用于编译运行
-- Maven，3.6.0+，不强制需要，某些IDE也自带
+- Jdk 用于编译运行
+  - < 3.2.2  jdk1.8
+  - 3.2.2 - 3.6.x jdk11
+  - 3.7 - 现在 jdk17
+- Maven，3.6.0+，工程构建，某些IDE也自带
 - IDE，推荐Idea，查看代码和运行
 - Html5浏览器，推荐使用Chorme，用于页面操作
-- 容器引擎，推荐使用Docker，用于初始化环境，比如PG数据库
-- Mqtt客户端，推荐使用MqttBox，用于模拟时序数据，近期MqttBox不再维护，可使用[Mqttfx](http://www.jensd.de/apps/mqttfx/1.7.1/)、[Eclipse Paho UI])(https://repo.eclipse.org/content/repositories/paho-releases/org/eclipse/paho/org.eclipse.paho.ui.app/)或[EMQ MQTTX](https://github.com/emqx/MQTTX)
+- 容器引擎，推荐使用Docker/OrbStack，用于初始化环境，比如PG数据库
+- Mqtt客户端，推荐使用EMQ的MQTTX [EMQ MQTTX](https://github.com/emqx/MQTTX)
 
 ### 基础入门
 #### 编译
 - 编译 [入口](doc/编译/编译.md) 适用于版本3.2-3.6
 - 编译 [入口](doc/编译/编译_3.7.md) 适用于版本3.7
+- 编译 [入口](doc/编译/编译_4.0.md) 适用于版本4.0
 
 #### 运行
 - 运行 [入口](doc/运行/运行.md) 适用于版本3.2-3.6
-- 编译 [入口](doc/运行/运行_3.7.md) 适用于版本3.7
+- 编译 [入口](doc/运行/运行_3.7.md) 适用于版本3.7+
 
 #### 调试
 - 后端 [入口](doc/调试/后端.md) 适用于版本3.2及以上
